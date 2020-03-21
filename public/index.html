@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>THE OFFICE chatroom</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+  <!--
+	Username input. 
+	Submitting name executes setClientName function,
+	emitting the 'setClientName' message to the server over sockets.
+-->
+
+<center>
+    <div class="login">
+  <div style="margin:100px;">
+    <form action="javascript:setClientName();" id="alias">
+      <h4>What's your name?</h4>
+      <br>
+      I'm
+      <input type="text" name="Nickname" value="Michael Scott">
+
+<!--
+<form>
+  <select>
+    <option type="text" name="Nickname" value="Michael Scott">Michael Scott</option>
+    <option type="text" name="Nickname" value="Jim Halpert">Jim Halpert</option>
+    <option type="text" name="Nickname" value="Karen Filippelli">Karen Filippelli</option>
+    <option type="text" name="Nickname" value="Kevin Malone">Kevin Malone</option>
+    <option type="text" name="Nickname" value="Pam Beesly">Pam Beesly</option>
+    <option type="text" name="Nickname" value="Oscar Martinez">Oscar Martinez</option>
+    <option type="text" name="Nickname" value="Stanley Hudson">Stanley Hudson</option>
+    <option type="text" name="Nickname" value="Kelly Kapoor">Kelly Kapoor</option>
+    <option type="text" name="Nickname" value="Dwight Schrute">Dwight Schrute</option>
+  </select>
+</form>
+        
+-->
+        
+      <br>
+        <div class="button">
+      <input type="submit" value="That's what she said!">
+            </div>
+    </form>
+  </div>
+        </div>
+</center>
+
+
+<center>
+  <div id="chatroom">
+    <div id=chatbox>Welcome to Dunder Mifflin!!!!!</div>
+    <div id=form-container>
+      <form action="javascript:clientMessage();" id="inputMessage">
+        <input id=message-content type="text" name="messageContent" value="I didn't say it, I declared it!">
+        <input type="submit" value="THAT'S WHAT I SAID!!!!!!">
+
+      </form>
+    </div>
+  </div>
+    </center>
+
+  <!-- Username input                -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+<!--
+    <script>
+function myFunction() {
+  var x = document.getElementById("mySelect").options.length;
+  document.getElementById("demo").innerHTML = "Found " + x + " options in the list.";
+}
+</script>
+-->
+
+</body>
+
+</html>

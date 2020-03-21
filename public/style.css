@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#chatroom {
+    height: 80%;
+    display: none;
+    background-image: url("images/theofficebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top:-100px;
+    margin-left:10%;
+    margin-right:10%;
+    position: relative;
+
+}
+
+#chatbox {
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-top:-150px;
+    padding: 10px;
+    height: 800px;
+    width:80%;
+    overflow-y: scroll
+}
+
+#form-container {
+    margin-left:100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#message-content {
+    margin: 10px;
+    bottom: 0;
+    width: 60%;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#name-container {
+    margin: 200px;
+}
+
+.login{
+    margin-top:10%;
+    width:50%;
+    height:70%;
+    background-color: black;
+    color:aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px;
+    padding-top: 20px;
+}
+
+
+input{
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px;
+    height:500%;
+}
+
+.button{
+padding-top:50px;
+}
+
+body{
+        background-image: url("images/logo.png");
+}
+
+h4{
+    margin-top:-100px;
+}
