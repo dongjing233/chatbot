@@ -6,6 +6,8 @@
   <title>THE OFFICE chatroom</title>
   <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
 </head>
 
@@ -18,7 +20,21 @@
 	Submitting name executes setClientName function,
 	emitting the 'setClientName' message to the server over sockets.
 -->
-
+<center>
+    <div class="container">
+    <div class="avatar-upload">
+        <div class="avatar-edit">
+            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+            <label for="imageUpload"></label>
+        </div>
+        <div class="avatar-preview">
+            <div id="imagePreview" style="background-image: url(images/michael%20scott.png);">
+            </div>
+        </div>
+    </div>
+</div>
+    </center>
+    
 <center>
     <div class="login">
   <div style="margin:100px;">
@@ -28,22 +44,6 @@
       I'm
       <input type="text" name="Nickname" value="Michael Scott">
 
-<!--
-<form>
-  <select>
-    <option type="text" name="Nickname" value="Michael Scott">Michael Scott</option>
-    <option type="text" name="Nickname" value="Jim Halpert">Jim Halpert</option>
-    <option type="text" name="Nickname" value="Karen Filippelli">Karen Filippelli</option>
-    <option type="text" name="Nickname" value="Kevin Malone">Kevin Malone</option>
-    <option type="text" name="Nickname" value="Pam Beesly">Pam Beesly</option>
-    <option type="text" name="Nickname" value="Oscar Martinez">Oscar Martinez</option>
-    <option type="text" name="Nickname" value="Stanley Hudson">Stanley Hudson</option>
-    <option type="text" name="Nickname" value="Kelly Kapoor">Kelly Kapoor</option>
-    <option type="text" name="Nickname" value="Dwight Schrute">Dwight Schrute</option>
-  </select>
-</form>
-        
--->
         
       <br>
         <div class="button">
@@ -71,14 +71,9 @@
   <!-- Username input                -->
   <script src="/socket.io/socket.io.js"></script>
   <script src="/main.js"></script>
-<!--
-    <script>
-function myFunction() {
-  var x = document.getElementById("mySelect").options.length;
-  document.getElementById("demo").innerHTML = "Found " + x + " options in the list.";
-}
-</script>
--->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="script.js"></script>
 
 </body>
 
